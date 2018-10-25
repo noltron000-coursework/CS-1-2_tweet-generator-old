@@ -1,10 +1,10 @@
 import random # psuedo-random number generator module
 import sys # module allows program to access terminal parameters
 
-def rearrange(input_list):
-	# This function takes randomify_list and stringify_list together.
-	# It inputs a list, and returns a randomized string.
-	return stringify_list(randomify_list(input_list))
+def rearrange(input_data):
+	if (type(input_data) is str:
+		input_data = input_data.split(' ')
+	return stringify_list(randomify_list(input_data))
 
 def randomify_list(input_list):
 	output_list = []
